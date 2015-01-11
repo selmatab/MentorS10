@@ -1,7 +1,7 @@
 /**
  * Klasa array lista za integere
  * 
- * @author harisarifovic
+ * 
  *
  */
 public class SortedDynamicArrayInt {

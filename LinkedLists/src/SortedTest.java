@@ -1,4 +1,3 @@
-
 public class SortedTest {
 public static void main(String[] args) {
 	
