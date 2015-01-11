@@ -18,8 +18,9 @@ public class LinkedListTest {
 		 for(int meh:list.toArray())
 			 System.out.println(meh);
 //		 list.removeDuplicate();
-list.removeDuplicateArray(list.toArray());
+//list.removeDuplicateArray(list.toArray());
 		 list.printList();
+		 list.getMiddleValue();
 		// list.add(7);
 		// list.printList();
 		// list.removeAt(2);
