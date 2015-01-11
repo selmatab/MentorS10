@@ -11,6 +11,39 @@ public class LinkedListInt {
 		this.head = null;
 		this.size = 0;
 	}
+public void removeDuplicate(){
+	
+	Node current =head;
+	Node test=head.next;
+	int counter1=0;
+	int counter2=1;
+	while(current.next!=null){
+		while(test!=null){
+			if(current.value==test.value){
+				removeAt(counter2);
+				removeAt(counter1);
+				return;
+			}
+			test=test.next;
+			counter2++;
+		}
+		
+		current=current.next;
+		counter1++;
+	}
+}
+
+public void removeDuplicateArray(int[] array){
+	for(int i=0;i <array.length;i++){
+		for(int j =i+1;j<array.length;j++){
+			if(array[i]==array[j]){
+				removeAt(i);
+				removeAt(j-1);
+			}
+			
+		}
+		}
+}
 
 	/**
 	 * Metoda koja dodaje prvi node.
@@ -70,7 +103,7 @@ public class LinkedListInt {
 		Node current = head.next;
 		Node previous = head;
 		int counter = 1;
-		while (counter > index) {
+		while (counter < index) {
 			current = current.next;
 			previous = previous.next;
 			counter++;

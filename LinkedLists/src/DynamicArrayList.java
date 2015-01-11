@@ -3,11 +3,7 @@ import java.util.Collection;
 /**
  * Klasa array lista za integere
  * 
-<<<<<<< HEAD
  * @author Selma
-=======
- * 
->>>>>>> origin/master
  *
  */
 public class DynamicArrayList<T> {
