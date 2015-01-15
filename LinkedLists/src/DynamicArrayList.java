@@ -38,7 +38,7 @@ public class DynamicArrayList<T> {
 	 * Brisanje elementa iz array liste
 	 * 
 	 * @param indeks
-	 *            Indeks elementa koji se brise
+	 * Indeks elementa koji se brise
 	 */
 	public void remove(int indeks) {
 		for (int i = indeks; i < size - 1; i++) {
@@ -51,7 +51,7 @@ public class DynamicArrayList<T> {
 	 * Dodavanje elementa u array listu
 	 * 
 	 * @param value
-	 *            Vrijednost koja se dodaje
+	 * Vrijednost koja se dodaje
 	 */
 	public void add(T value) {
 		if (size == array.length) {
@@ -100,13 +100,13 @@ public class DynamicArrayList<T> {
 	 * Pretrazuje niz i trazi proslijedjenu vrijednost
 	 * 
 	 * @param value
-	 *            Proslijedjena vrijednost
+	 * Proslijedjena vrijednost
 	 * @return Vraca true/false u zavisnosti da li proslijedjena vrijednost se
-	 *         nalazi u nizu
+	 * nalazi u nizu
 	 */
 	public boolean contains(T value) {
 		for (int i = 0; i < size; i++) {
-			if (array[i] == value) {
+			if (array[i].equals(value)) {
 				return true;
 			}
 		}
